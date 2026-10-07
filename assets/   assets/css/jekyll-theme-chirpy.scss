@@ -1,15 +1,19 @@
-   ---
-   ---
+---
+---
 
-   @use "main";
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
 
-   :root:not([data-mode]),
-   [data-mode="light"] {
-     --sidebar-bg: #1269cc;
-     --link-color: #51eefc;
-   }
+:root:not([data-mode]),
+[data-mode="light"] {
+  --sidebar-bg: #1269cc;
+  --link-color: #51eefc;
+}
 
-   [data-mode="dark"] {
-     --sidebar-bg: #0b1320;
-     --link-color: #ff8fab;
-   }
+[data-mode="dark"] {
+  --sidebar-bg: #0b1320;
+  --link-color: #ff8fab;
+}
