@@ -1,0 +1,15 @@
+   ---
+   ---
+
+   @use "main";
+
+   :root:not([data-mode]),
+   [data-mode="light"] {
+     --sidebar-bg: #1269cc;
+     --link-color: #51eefc;
+   }
+
+   [data-mode="dark"] {
+     --sidebar-bg: #0b1320;
+     --link-color: #ff8fab;
+   }
