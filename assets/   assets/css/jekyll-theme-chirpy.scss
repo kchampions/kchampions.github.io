@@ -7,13 +7,35 @@
 {%- endif -%}
 ';
 
-:root:not([data-mode]),
-[data-mode="light"] {
+/* ---------- Light mode ---------- */
+:root[data-bs-theme="light"] {
   --sidebar-bg: #1269cc;
-  --link-color: #51eefc;
+  --sidebar-border-color: rgba(255, 255, 255, 0.35);
+  --sidebar-muted-color: #ffffff;
+  --sidebar-active-color: #51eefc;
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.15);
+  --sidebar-btn-bg: #ffffff;
+  --sidebar-btn-color: #1269cc;
+  --site-title-color: #ffffff;
+  --site-subtitle-color: #ffffff;
+
+  --main-bg: #ffffff;
+  --text-color: #303030;
+  --heading-color: #303030;
+  --link-color: #1269cc;
+
+  --topbar-bg: rgb(109 154 199 / 85%);
+  --topbar-text-color: #ffffff;
 }
 
-[data-mode="dark"] {
-  --sidebar-bg: #0b1320;
-  --link-color: #ff8fab;
+/* ---------- Dark mode ---------- */
+:root[data-bs-theme="dark"] {
+  --sidebar-bg: #303030;
+  --sidebar-muted-color: #6d9ac7;
+  --sidebar-active-color: #51eefc;
+  --sidebar-hover-bg: rgba(81, 238, 252, 0.12);
+  --site-title-color: #ffffff;
+  --site-subtitle-color: #6d9ac7;
+
+  --link-color: #51eefc;
 }
