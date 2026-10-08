@@ -45,3 +45,43 @@
 
   --link-color: #51eefc;
 }
+
+/* ---------- Persona-style sidebar buttons ---------- */
+#sidebar ul.nav {
+  padding-right: 0.75rem;
+}
+
+#sidebar ul > li.nav-item {
+  margin: 0.35rem 0;
+}
+
+#sidebar ul > li.nav-item a.nav-link {
+  border-radius: 0 !important;
+  transform: skewX(-14deg);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #ffffff !important;
+  background: transparent;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+/* Hover: white slab with blue text */
+#sidebar ul > li.nav-item a.nav-link:hover {
+  background: #ffffff !important;
+  color: #1269cc !important;
+  transform: skewX(-14deg) translateX(6px);
+}
+
+/* Selected: cyan slab, dark navy text, hard drop shadow, pushed out */
+#sidebar ul > li.nav-item a.nav-link.active {
+  background: #51eefc !important;
+  color: #0a1f4d !important;
+  transform: skewX(-14deg) translateX(10px) scale(1.06);
+  box-shadow: 6px 6px 0 #0a1f4d;
+}
+
+/* Keep icons matching the text colour */
+#sidebar ul > li.nav-item a.nav-link i {
+  color: inherit !important;
+}
