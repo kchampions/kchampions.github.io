@@ -78,10 +78,21 @@
   background: #51eefc !important;
   color: #0a1f4d !important;
   transform: skewX(-14deg) translateX(10px) scale(1.06);
-  box-shadow: 6px 6px 0 #0a1f4d;
+  /*box-shadow: 6px 6px 0 #0a1f4d8*/
+  filter: drop-shadow(6px 6px 0 #0a1f4d);
 }
 
 /* Keep icons matching the text colour */
 #sidebar ul > li.nav-item a.nav-link i {
   color: inherit !important;
+  /* triangle button */
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  padding-right: 2rem;
+}
+
+/* slanted sidebar*/
+@media (min-width: 992px) {
+  #sidebar {
+    clip-path: polygon(0 0, 100% 0, calc(100% - 36px) 100%, 0 100%);
+  }
 }
