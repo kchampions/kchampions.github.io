@@ -1,5 +1,5 @@
 ---
-title: Combining soil mechanics and Monte Carlo search
+title: Trying-to-apply search algorithms to soil mechanics related applications
 date: 2026-10-21 15:00:00 +0100
 categories: [Projects, Soil Mechanics]
 tags: [soil mechanics, geotechnical, ground engineering, neural networks]     # TAG names should always be lowercase
