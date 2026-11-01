@@ -2,11 +2,16 @@
 title: Mathjax practise 
 date: 2026-10-25 11:00:00 +0100
 categories: [Maths, idk yet]
-tags: [maths]     # TAG names should always be lowercase
+tags: [maths, maths]     # TAG names should always be lowercase
 math = true
 ---
 
 <!-- Block math, keep all blank lines -->
+$$
+\[
+  \frac{\partial y}{\partial x}
+\]
+$$
 
 $$
 block math whatever that means
